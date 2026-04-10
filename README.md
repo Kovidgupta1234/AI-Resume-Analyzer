@@ -1,34 +1,16 @@
-# AI Resume Analyzer
+# React + Vite
 
-An attractive, fast, and fully functional multi-page web application to simulate AI-powered resume screening. It scores resumes, checks for missing industry keywords, and provides actionable feedback.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
-- **Frontend**: React + Vite + React Router (Multi-page setup)
-- **Backend**: Native Java HTTP Server (No external heavy framework required)
-- **Design**: Premium UI with an intuitive dark/light mode switcher, micro-animations, and drag-and-drop support.
-- **Instant Analysis**: Simulates ATS parsing instantly.
+Currently, two official plugins are available:
 
-## Project Structure
-- `/frontend`: contains the complete React Vite source code.
-- `/backend`: contains the `Backend.java` API server.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Getting Started
+## React Compiler
 
-### 1. Run the Backend (Java)
-Open a terminal in the `backend` folder and run:
-```bash
-javac Backend.java
-java Backend
-```
-The backend server will start on `http://localhost:8080`.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### 2. Run the Frontend (React)
-Open another terminal in the `frontend` folder and run:
-```bash
-npm install
-npm run dev
-```
-The React application will start on `http://localhost:5173`. Open this URL in your web browser.
+## Expanding the ESLint configuration
 
-## Built For
-This project is built for B.Tech Computer Engineering implementations as a high-quality demonstration of full-stack integration and responsive UI/UX principles.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
